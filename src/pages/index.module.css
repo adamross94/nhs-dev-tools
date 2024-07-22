@@ -1,0 +1,89 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 5rem 0;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.headerSection {
+  text-align: center;
+  margin: 1rem;
+  flex: 1;
+  min-width: 250px; /* Ensure it doesn't get too narrow */
+}
+
+.headerSection h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.headerSection p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.headerSection .button {
+  font-size: 1rem;
+}
+
+/* Global styles for dark mode */
+[data-theme='dark'] .heroBanner {
+  background-color: #2e3137; /* NHS Dark Blue */
+  color: #FFFFFF; /* White for text */
+}
+
+[data-theme='dark'] .headerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+[data-theme='dark'] .headerSection {
+  text-align: center;
+  margin: 1rem;
+  flex: 1;
+  min-width: 250px; /* Ensure it doesn't get too narrow */
+}
+
+[data-theme='dark'] .headerSection h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme='dark'] .headerSection p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #E8EDEE; /* NHS Pale Grey for subtext */
+}
+
+[data-theme='dark'] .headerSection .button {
+  font-size: 4rem;
+  background-color: #41B6E6; /* NHS Light Blue for buttons */
+  color: #003087; /* NHS Dark Blue for button text */
+}
+
+
+
+
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

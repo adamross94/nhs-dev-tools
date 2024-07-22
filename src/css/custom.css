@@ -1,0 +1,187 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #005EB8; /* NHS Blue */
+  --ifm-color-primary-dark: #003087; /* NHS Dark Blue */
+  --ifm-color-primary-darker: #231f20; /* NHS Black */
+  --ifm-color-primary-darkest: #2e3137; /* NHS Dark Grey */
+  --ifm-color-primary-light: #0072CE; /* NHS Blue - lighter */
+  --ifm-color-primary-lighter: #41B6E6; /* NHS Sky Blue */
+  --ifm-color-primary-lightest: #00AEEF; /* NHS Cyan */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #005EB8; /* NHS Blue */
+  --ifm-color-primary-dark: #003087; /* NHS Dark Blue */
+  --ifm-color-primary-darker: #231f20; /* NHS Black */
+  --ifm-color-primary-darkest: #2e3137; /* NHS Dark Grey */
+  --ifm-color-primary-light: #0072CE; /* NHS Blue - lighter */
+  --ifm-color-primary-lighter: #41B6E6; /* NHS Sky Blue */
+  --ifm-color-primary-lightest: #00AEEF; /* NHS Cyan */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: var(--ifm-color-primary-dark);
+  color: #FFFFFF;
+  padding-top: 15px !important;
+  padding-bottom: 52px !important;
+}
+
+.navbar * {
+  color: #FFFFFF;
+}
+
+
+
+[data-theme='dark'] .navbar {
+  background-color: var(--ifm-color-primary-darker);
+  padding-top: 15px !important;
+  padding-bottom: 52px !important;
+}
+
+/* Custom CSS to increase emoji size in the navbar title */
+.navbar__title {
+  font-size: 1.5em; /* Adjust the size as needed */
+}
+
+/* Sidebar and menu styling */
+.docSidebarContainer, .menu {
+  background-color: #E8EDEE;
+}
+
+[data-theme='dark'] .docSidebarContainer, 
+[data-theme='dark'] .menu {
+  background-color: #2e3137;
+}
+
+.docSidebarContainer li a, .menu__link {
+  color: #000000;
+}
+
+[data-theme='dark'] .docSidebarContainer li a, 
+[data-theme='dark'] .menu__link {
+  color: #FFFFFF;
+}
+
+.docSidebarContainer li a:hover, .menu__link--active {
+  background-color: #005EB8;
+  color: #000000;
+}
+
+[data-theme='dark'] .docSidebarContainer li a:hover, 
+[data-theme='dark'] .menu__link--active {
+  background-color: #41B6E6;
+  color: #FFFFFF;
+}
+
+/* Change the footer background color */
+.footer {
+  background-color: #231f20 !important; /* NHS Dark Blue */
+  color: #ffffff !important; /* White text for better contrast */
+}
+
+[data-theme='dark'] .footer {
+  background-color: #070707 !important; /* Lighter Grey */
+  color: #ffffff !important; /* White text for better contrast */
+}
+
+/* Change the color of text links in the footer */
+.footer__link {
+  color: #ffffff !important; /* Ensuring links are also visible */
+}
+
+[data-theme='dark'] .footer__link {
+  color: #ffffff !important; /* Ensuring links are also visible */
+}
+
+/* Optional: change hover color of links in the footer */
+.footer__link:hover {
+  color: #768692 !important; /* NHS Mid Grey for hover effects */
+}
+
+[data-theme='dark'] .footer__link:hover {
+  color: #41B6E6 !important; /* NHS Sky Blue for hover effects */
+}
+
+/* Custom CSS for hyperlink colors */
+a {
+  color: #005EB8; /* NHS Blue for hyperlinks */
+}
+
+[data-theme='dark'] a {
+  color: #41B6E6; /* NHS Sky Blue for hyperlinks in dark mode */
+}
+
+a:hover {
+  color: #0072CE; /* NHS Blue - lighter for hover effect */
+}
+
+[data-theme='dark'] a:hover {
+  color: #00AEEF; /* NHS Cyan for hover effect in dark mode */
+}
+
+/* Custom CSS for breadcrumb link color in dark mode */
+[data-theme='dark'] .breadcrumbs__link {
+  color: #41b6e6 !important;
+}
+
+/* Custom CSS for dark mode */
+[data-theme='dark'] .pagination-nav__link--prev,
+[data-theme='dark'] .pagination-nav__link--next {
+  border-color: #2e3137 ; /* Set the border color */
+  color: #41B6E6; /* Set the text color if needed */
+}
+
+[data-theme='dark'] .pagination-nav__link--prev:hover,
+[data-theme='dark'] .pagination-nav__link--next:hover {
+  border-color: #41B6E6; /* Set the hover border color */
+  color: #41B6E6; /* Set the hover text color */
+}
+
+
+/* Mobile-specific adjustments for light mode only */
+@media (max-width: 768px) {
+  [data-theme='light'] .navbar-sidebar__brand {
+    background-color: var(--ifm-color-primary-dark) !important; /* Specific blue for light mode navbar */
+  }
+  
+  /* Ensure the mobile navbar has the correct color in light mode */
+  [data-theme='light'] .navbar--fixed-top.navbar-sidebar--show,
+  [data-theme='light'] .navbar--fixed-top.navbar-sidebar--show .navbar__inner {
+    background-color: var(--ifm-color-primary-dark) !important; /* Consistent blue across the navbar */
+  }
+
+  [data-theme='light'] .navbar-sidebar__back {
+    color: #231f20 !important; /* Set text color to dark for visibility in light mode */
+    background-color: #d4d9da !important; /* Light background to distinguish the button */
+  }
+}
+
+@media (max-width: 1000px) {
+  [data-theme='light'] .navbar-sidebar__brand {
+    background-color: var(--ifm-color-primary-dark) !important; /* Specific blue for light mode navbar */
+  }
+  
+  /* Ensure the mobile navbar has the correct color in light mode */
+  [data-theme='light'] .navbar--fixed-top.navbar-sidebar--show,
+  [data-theme='light'] .navbar--fixed-top.navbar-sidebar--show .navbar__inner {
+    background-color: var(--ifm-color-primary-dark) !important; /* Consistent blue across the navbar */
+  }
+
+  [data-theme='light'] .navbar-sidebar__back {
+    color: #231f20 !important; /* Set text color to dark for visibility in light mode */
+    background-color: #d4d9da !important; /* Light background to distinguish the button */
+  }
+}
+
+
