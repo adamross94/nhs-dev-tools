@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
@@ -39,3 +40,7 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+=======
+# nhs-dev-tools
+A documentation project to help NHS staff
+>>>>>>> 20b027a9ae8131b34ec4f84e750ed1632ef294b4
